@@ -38,7 +38,12 @@ $(window).scroll(function(){
 })
 
 
-
+/*FOOTER CURRENT YEAR AUTO UPDATE*/
+const year = document.getElementById('year');
+currentYear = new Date().getFullYear();
+newYear = new Date(`january 01 ${currentYear +1} 00:00:00`);
+year.innerText = currentYear;
+/*END OF FOOTER CURRENT YEAR AUTO UPDATE*/
 
 
 
